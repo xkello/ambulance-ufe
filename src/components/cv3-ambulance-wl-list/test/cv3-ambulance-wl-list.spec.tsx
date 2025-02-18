@@ -1,4 +1,4 @@
-import { newSpecPage } from '@stencil/core/testing';
+  import { newSpecPage } from '@stencil/core/testing';
 import { Cv3AmbulanceWlList } from '../cv3-ambulance-wl-list';
 
 describe('cv3-ambulance-wl-list', () => {
@@ -7,12 +7,10 @@ describe('cv3-ambulance-wl-list', () => {
       components: [Cv3AmbulanceWlList],
       html: `<cv3-ambulance-wl-list></cv3-ambulance-wl-list>`,
     });
-    expect(page.root).toEqualHtml(`
-      <cv3-ambulance-wl-list>
-        <mock:shadow-root>
-          <slot></slot>
-        </mock:shadow-root>
-      </cv3-ambulance-wl-list>
-    `);
+    const wlList = page.rootInstance as PfxAmbulanceWlList;
+    const expectedPatients = wlList?.waitingPatients?.length
+
+    const items = page.root.shadowRoot.querySelectorAll("md-list-item");
+    expect(items.length).toEqual(expectedPatients);
   });
 });
