@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
   <head>
+    <base href="/"/>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
@@ -10,8 +11,7 @@
     <script type="module" src="/build/ambulance-ufe.esm.js"></script>
     <script nomodule src="/build/ambulance-ugfe.js"></script>
   </head>
-  <body style="font-family: 'Roboto'; ">
-  <cv3-ambulance-wl-list></cv3-ambulance-wl-list>
-    <my-component first="Stencil" middle="'Don't call me a framework'" last="JS"></my-component>
+  <body>
+  <cv3-ambulance-wl-app base-path="/ambulance-wl/"></cv3-ambulance-wl-app>
   </body>
 </html>
