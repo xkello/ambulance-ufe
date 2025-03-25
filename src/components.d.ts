@@ -12,6 +12,8 @@ export namespace Components {
         "basePath": string;
     }
     interface XkelloAmbulanceWlEditor {
+        "ambulanceId": string;
+        "apiBase": string;
         "entryId": string;
     }
     interface XkelloAmbulanceWlList {
@@ -81,6 +83,8 @@ declare namespace LocalJSX {
         "basePath"?: string;
     }
     interface XkelloAmbulanceWlEditor {
+        "ambulanceId"?: string;
+        "apiBase"?: string;
         "entryId"?: string;
         "onEditor-closed"?: (event: XkelloAmbulanceWlEditorCustomEvent<string>) => void;
     }
