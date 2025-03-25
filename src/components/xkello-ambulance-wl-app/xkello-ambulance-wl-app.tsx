@@ -5,11 +5,11 @@ declare global {
 }
 
 @Component({
-  tag: 'cv3-ambulance-wl-app',
-  styleUrl: 'cv3-ambulance-wl-app.css',
+  tag: 'xkello-ambulance-wl-app',
+  styleUrl: 'xkello-ambulance-wl-app.css',
   shadow: true,
 })
-export class Cv3AmbulanceWlApp {
+export class XkelloAmbulanceWlApp {
   @State() private relativePath = "";
 
   @Prop() basePath: string="";
@@ -51,12 +51,12 @@ export class Cv3AmbulanceWlApp {
     return (
       <Host>
         { element === "editor"
-          ? <cv3-ambulance-wl-editor entry-id={entryId}
+          ? <xkello-ambulance-wl-editor entry-id={entryId}
           oneditor-closed={ () => navigate("./list")} >
-          </cv3-ambulance-wl-editor>
-          : <cv3-ambulance-wl-list
+          </xkello-ambulance-wl-editor>
+          : <xkello-ambulance-wl-list
             onentry-clicked={ (ev: CustomEvent<string>)=> navigate("./entry/" + ev.detail) } >
-          </cv3-ambulance-wl-list>
+          </xkello-ambulance-wl-list>
         }
 
       </Host>

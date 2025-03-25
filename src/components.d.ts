@@ -6,94 +6,94 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface Cv3AmbulanceWlApp {
+    interface XkelloAmbulanceWlApp {
         "basePath": string;
     }
-    interface Cv3AmbulanceWlEditor {
+    interface XkelloAmbulanceWlEditor {
         "entryId": string;
     }
-    interface Cv3AmbulanceWlList {
+    interface XkelloAmbulanceWlList {
     }
 }
-export interface Cv3AmbulanceWlEditorCustomEvent<T> extends CustomEvent<T> {
+export interface XkelloAmbulanceWlEditorCustomEvent<T> extends CustomEvent<T> {
     detail: T;
-    target: HTMLCv3AmbulanceWlEditorElement;
+    target: HTMLXkelloAmbulanceWlEditorElement;
 }
-export interface Cv3AmbulanceWlListCustomEvent<T> extends CustomEvent<T> {
+export interface XkelloAmbulanceWlListCustomEvent<T> extends CustomEvent<T> {
     detail: T;
-    target: HTMLCv3AmbulanceWlListElement;
+    target: HTMLXkelloAmbulanceWlListElement;
 }
 declare global {
-    interface HTMLCv3AmbulanceWlAppElement extends Components.Cv3AmbulanceWlApp, HTMLStencilElement {
+    interface HTMLXkelloAmbulanceWlAppElement extends Components.XkelloAmbulanceWlApp, HTMLStencilElement {
     }
-    var HTMLCv3AmbulanceWlAppElement: {
-        prototype: HTMLCv3AmbulanceWlAppElement;
-        new (): HTMLCv3AmbulanceWlAppElement;
+    var HTMLXkelloAmbulanceWlAppElement: {
+        prototype: HTMLXkelloAmbulanceWlAppElement;
+        new (): HTMLXkelloAmbulanceWlAppElement;
     };
-    interface HTMLCv3AmbulanceWlEditorElementEventMap {
+    interface HTMLXkelloAmbulanceWlEditorElementEventMap {
         "editor-closed": string;
     }
-    interface HTMLCv3AmbulanceWlEditorElement extends Components.Cv3AmbulanceWlEditor, HTMLStencilElement {
-        addEventListener<K extends keyof HTMLCv3AmbulanceWlEditorElementEventMap>(type: K, listener: (this: HTMLCv3AmbulanceWlEditorElement, ev: Cv3AmbulanceWlEditorCustomEvent<HTMLCv3AmbulanceWlEditorElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
+    interface HTMLXkelloAmbulanceWlEditorElement extends Components.XkelloAmbulanceWlEditor, HTMLStencilElement {
+        addEventListener<K extends keyof HTMLXkelloAmbulanceWlEditorElementEventMap>(type: K, listener: (this: HTMLXkelloAmbulanceWlEditorElement, ev: XkelloAmbulanceWlEditorCustomEvent<HTMLXkelloAmbulanceWlEditorElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
         addEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
         addEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
         addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
-        removeEventListener<K extends keyof HTMLCv3AmbulanceWlEditorElementEventMap>(type: K, listener: (this: HTMLCv3AmbulanceWlEditorElement, ev: Cv3AmbulanceWlEditorCustomEvent<HTMLCv3AmbulanceWlEditorElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLXkelloAmbulanceWlEditorElementEventMap>(type: K, listener: (this: HTMLXkelloAmbulanceWlEditorElement, ev: XkelloAmbulanceWlEditorCustomEvent<HTMLXkelloAmbulanceWlEditorElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
         removeEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
         removeEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
         removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
     }
-    var HTMLCv3AmbulanceWlEditorElement: {
-        prototype: HTMLCv3AmbulanceWlEditorElement;
-        new (): HTMLCv3AmbulanceWlEditorElement;
+    var HTMLXkelloAmbulanceWlEditorElement: {
+        prototype: HTMLXkelloAmbulanceWlEditorElement;
+        new (): HTMLXkelloAmbulanceWlEditorElement;
     };
-    interface HTMLCv3AmbulanceWlListElementEventMap {
+    interface HTMLXkelloAmbulanceWlListElementEventMap {
         "entry-clicked": string;
     }
-    interface HTMLCv3AmbulanceWlListElement extends Components.Cv3AmbulanceWlList, HTMLStencilElement {
-        addEventListener<K extends keyof HTMLCv3AmbulanceWlListElementEventMap>(type: K, listener: (this: HTMLCv3AmbulanceWlListElement, ev: Cv3AmbulanceWlListCustomEvent<HTMLCv3AmbulanceWlListElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
+    interface HTMLXkelloAmbulanceWlListElement extends Components.XkelloAmbulanceWlList, HTMLStencilElement {
+        addEventListener<K extends keyof HTMLXkelloAmbulanceWlListElementEventMap>(type: K, listener: (this: HTMLXkelloAmbulanceWlListElement, ev: XkelloAmbulanceWlListCustomEvent<HTMLXkelloAmbulanceWlListElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
         addEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
         addEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
         addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
-        removeEventListener<K extends keyof HTMLCv3AmbulanceWlListElementEventMap>(type: K, listener: (this: HTMLCv3AmbulanceWlListElement, ev: Cv3AmbulanceWlListCustomEvent<HTMLCv3AmbulanceWlListElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLXkelloAmbulanceWlListElementEventMap>(type: K, listener: (this: HTMLXkelloAmbulanceWlListElement, ev: XkelloAmbulanceWlListCustomEvent<HTMLXkelloAmbulanceWlListElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
         removeEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
         removeEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
         removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
     }
-    var HTMLCv3AmbulanceWlListElement: {
-        prototype: HTMLCv3AmbulanceWlListElement;
-        new (): HTMLCv3AmbulanceWlListElement;
+    var HTMLXkelloAmbulanceWlListElement: {
+        prototype: HTMLXkelloAmbulanceWlListElement;
+        new (): HTMLXkelloAmbulanceWlListElement;
     };
     interface HTMLElementTagNameMap {
-        "cv3-ambulance-wl-app": HTMLCv3AmbulanceWlAppElement;
-        "cv3-ambulance-wl-editor": HTMLCv3AmbulanceWlEditorElement;
-        "cv3-ambulance-wl-list": HTMLCv3AmbulanceWlListElement;
+        "xkello-ambulance-wl-app": HTMLXkelloAmbulanceWlAppElement;
+        "xkello-ambulance-wl-editor": HTMLXkelloAmbulanceWlEditorElement;
+        "xkello-ambulance-wl-list": HTMLXkelloAmbulanceWlListElement;
     }
 }
 declare namespace LocalJSX {
-    interface Cv3AmbulanceWlApp {
+    interface XkelloAmbulanceWlApp {
         "basePath"?: string;
     }
-    interface Cv3AmbulanceWlEditor {
+    interface XkelloAmbulanceWlEditor {
         "entryId"?: string;
-        "onEditor-closed"?: (event: Cv3AmbulanceWlEditorCustomEvent<string>) => void;
+        "onEditor-closed"?: (event: XkelloAmbulanceWlEditorCustomEvent<string>) => void;
     }
-    interface Cv3AmbulanceWlList {
-        "onEntry-clicked"?: (event: Cv3AmbulanceWlListCustomEvent<string>) => void;
+    interface XkelloAmbulanceWlList {
+        "onEntry-clicked"?: (event: XkelloAmbulanceWlListCustomEvent<string>) => void;
     }
     interface IntrinsicElements {
-        "cv3-ambulance-wl-app": Cv3AmbulanceWlApp;
-        "cv3-ambulance-wl-editor": Cv3AmbulanceWlEditor;
-        "cv3-ambulance-wl-list": Cv3AmbulanceWlList;
+        "xkello-ambulance-wl-app": XkelloAmbulanceWlApp;
+        "xkello-ambulance-wl-editor": XkelloAmbulanceWlEditor;
+        "xkello-ambulance-wl-list": XkelloAmbulanceWlList;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "cv3-ambulance-wl-app": LocalJSX.Cv3AmbulanceWlApp & JSXBase.HTMLAttributes<HTMLCv3AmbulanceWlAppElement>;
-            "cv3-ambulance-wl-editor": LocalJSX.Cv3AmbulanceWlEditor & JSXBase.HTMLAttributes<HTMLCv3AmbulanceWlEditorElement>;
-            "cv3-ambulance-wl-list": LocalJSX.Cv3AmbulanceWlList & JSXBase.HTMLAttributes<HTMLCv3AmbulanceWlListElement>;
+            "xkello-ambulance-wl-app": LocalJSX.XkelloAmbulanceWlApp & JSXBase.HTMLAttributes<HTMLXkelloAmbulanceWlAppElement>;
+            "xkello-ambulance-wl-editor": LocalJSX.XkelloAmbulanceWlEditor & JSXBase.HTMLAttributes<HTMLXkelloAmbulanceWlEditorElement>;
+            "xkello-ambulance-wl-list": LocalJSX.XkelloAmbulanceWlList & JSXBase.HTMLAttributes<HTMLXkelloAmbulanceWlListElement>;
         }
     }
 }

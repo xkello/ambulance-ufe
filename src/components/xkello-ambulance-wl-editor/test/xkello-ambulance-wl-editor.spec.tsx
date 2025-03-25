@@ -1,11 +1,11 @@
 import { newSpecPage } from '@stencil/core/testing';
-import { Cv3AmbulanceWlEditor } from '../cv3-ambulance-wl-editor';
+import { XkelloAmbulanceWlEditor } from '../xkello-ambulance-wl-editor';
 
-  describe('cv3-ambulance-wl-editor', () => {
+  describe('xkello-ambulance-wl-editor', () => {
     it('buttons shall be of different type', async () => {
       const page = await newSpecPage({
-        components: [Cv3AmbulanceWlEditor],
-          html: `<cv3-ambulance-wl-editor entry-id="@new"></cv3-ambulance-wl-editor>`,
+        components: [XkelloAmbulanceWlEditor],
+          html: `<xkello-ambulance-wl-editor entry-id="@new"></xkello-ambulance-wl-editor>`,
     });
     let items: any = await page.root.shadowRoot.querySelectorAll("md-filled-button");
     expect(items.length).toEqual(1);

@@ -1,11 +1,11 @@
 import { Component, Host, Prop, State, h, EventEmitter, Event } from '@stencil/core';
 
 @Component({
-  tag: 'cv3-ambulance-wl-editor',
-  styleUrl: 'cv3-ambulance-wl-editor.css',
+  tag: 'xkello-ambulance-wl-editor',
+  styleUrl: 'xkello-ambulance-wl-editor.css',
   shadow: true,
 })
-export class Cv3AmbulanceWlEditor {
+export class XkelloAmbulanceWlEditor {
   @Prop() entryId: string;
 
   @Event({eventName: "editor-closed"}) editorClosed: EventEmitter<string>;

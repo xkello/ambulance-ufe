@@ -1,3 +1,8 @@
+/* @css-custom-properties */
+:root {
+  --wl-gap: 0.5rem;
+}
+
 :host {
   --_wl-editor_gap: var(--wl-gap, 0.5rem);
 

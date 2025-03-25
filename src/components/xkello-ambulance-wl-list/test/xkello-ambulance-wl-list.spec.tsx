@@ -1,13 +1,13 @@
   import { newSpecPage } from '@stencil/core/testing';
-import { Cv3AmbulanceWlList } from '../cv3-ambulance-wl-list';
+import { XkelloAmbulanceWlList } from '../xkello-ambulance-wl-list';
 
-describe('cv3-ambulance-wl-list', () => {
+describe('xkello-ambulance-wl-list', () => {
   it('renders', async () => {
     const page = await newSpecPage({
-      components: [Cv3AmbulanceWlList],
-      html: `<cv3-ambulance-wl-list></cv3-ambulance-wl-list>`,
+      components: [XkelloAmbulanceWlList],
+      html: `<xkello-ambulance-wl-list></xkello-ambulance-wl-list>`,
     });
-    const wlList = page.rootInstance as Cv3AmbulanceWlList;
+    const wlList = page.rootInstance as XkelloAmbulanceWlList;
     const expectedPatients = wlList?.waitingPatients?.length
 
     const items = page.root.shadowRoot.querySelectorAll("md-list-item");

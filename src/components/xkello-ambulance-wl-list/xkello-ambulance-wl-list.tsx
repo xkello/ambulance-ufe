@@ -1,11 +1,11 @@
 import { Component, Event, EventEmitter,  Host, h } from '@stencil/core';
 
 @Component({
-  tag: 'cv3-ambulance-wl-list',
-  styleUrl: 'cv3-ambulance-wl-list.css',
+  tag: 'xkello-ambulance-wl-list',
+  styleUrl: 'xkello-ambulance-wl-list.css',
   shadow: true,
 })
-export class Cv3AmbulanceWlList {
+export class XkelloAmbulanceWlList {
   @Event({ eventName: "entry-clicked"}) entryClicked: EventEmitter<string>;
   waitingPatients: any[];
 
