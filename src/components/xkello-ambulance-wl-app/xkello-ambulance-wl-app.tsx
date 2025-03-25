@@ -11,8 +11,9 @@ declare global {
 })
 export class XkelloAmbulanceWlApp {
   @State() private relativePath = "";
-
   @Prop() basePath: string="";
+  @Prop() apiBase: string;
+  @Prop() ambulanceId: string;
 
   componentWillLoad() {
     const baseUri = new URL(this.basePath, document.baseURI || "/").pathname;
@@ -54,7 +55,7 @@ export class XkelloAmbulanceWlApp {
           ? <xkello-ambulance-wl-editor entry-id={entryId}
           oneditor-closed={ () => navigate("./list")} >
           </xkello-ambulance-wl-editor>
-          : <xkello-ambulance-wl-list
+          : <xkello-ambulance-wl-list ambulance-id={this.ambulanceId} api-base={this.apiBase}
             onentry-clicked={ (ev: CustomEvent<string>)=> navigate("./entry/" + ev.detail) } >
           </xkello-ambulance-wl-list>
         }
