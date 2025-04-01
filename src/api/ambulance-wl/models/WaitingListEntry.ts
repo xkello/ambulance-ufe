@@ -21,7 +21,7 @@ import {
 } from './Condition';
 
 /**
- * 
+ *
  * @export
  * @interface WaitingListEntry
  */
@@ -63,7 +63,7 @@ export interface WaitingListEntry {
      */
     estimatedDurationMinutes: number;
     /**
-     * 
+     *
      * @type {Condition}
      * @memberof WaitingListEntry
      */
@@ -92,7 +92,7 @@ export function WaitingListEntryFromJSONTyped(json: any, ignoreDiscriminator: bo
         return json;
     }
     return {
-        
+
         'id': json['id'],
         'name': !exists(json, 'name') ? undefined : json['name'],
         'patientId': json['patientId'],
@@ -111,7 +111,7 @@ export function WaitingListEntryToJSON(value?: WaitingListEntry | null): any {
         return null;
     }
     return {
-        
+
         'id': value.id,
         'name': value.name,
         'patientId': value.patientId,
